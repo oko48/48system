@@ -130,7 +130,7 @@
 
                         title: "Development and investigation of a symmetric induction heating unit for spherical shape metal ware",
                         subtitle: "Journal of Chemical Technology and Metallurgy ",
-                        src: "require('assets/newspaper/Bukgar2018.pdf')"
+                        src: "/img/newspaper/Bukgar2018.pdf"
                     },
                     {
                         divider: true,
@@ -140,7 +140,7 @@
 
                         title: 'Расчет и разработка экспериментальной индукционной установки для симметричной закалки мелющих металлических шаров',
                         subtitle: "Черные металлы",
-                        src: "require('assets/newspaper/CherMet.pdf')"
+                        src: "/img/newspaper/CherMet.pdf"
                     },
                     {
                         divider: true,
@@ -150,13 +150,13 @@
 
                         title: 'Исследование распределения энергии электромагнитного поля в объёме металлического шара при нагреве в индукторе',
                         subtitle: "Нижегородский государтвенны технический университет им. Р.Е. Алексеева",
-                        src: "assets/newspaper/Issledovanie_raspredlenia.pdf')"
+                        src: "/img/newspaper/Issledovanie_raspredlenia.pdf"
                     },
                     {
 
                         title: 'Анализ влияния электромагнитных сил на кинематтику движения шара в процессе осесимметричного индукционного нагрева',
                         subtitle: "Электротехнические системы и комплексы ",
-                        src: "require('assets/newspaper/Magnitogorsk.pdf')"
+                        src: "/img/newspaper/Magnitogorsk.pdf"
                     }
                 ],
                 items2: [
@@ -164,7 +164,7 @@
 
                         title: "Induction Heating Plant for Heat Treatment of Spherical Metal Products",
                         subtitle: "RUSSIAN METALLURGY (METALLY)",
-                        src: "require('assets/newspaper/RussianMet.pdf')"
+                        src: "/img/newspaper/RussianMet.pdf"
                     },
                     {
                         divider: true,
@@ -174,7 +174,7 @@
 
                         title: 'Исследования и разработка электро термического оборудования непрерывного действия для симметричного индукционного нагрева под закалку мелющих шаров',
                         subtitle: "Сталь",
-                        src: "require('assets/newspaper/Steeel.pdf')"
+                        src: "/img/newspaper/Steeel.pdf"
                     },
                     {
                         divider: true,
@@ -184,13 +184,13 @@
 
                         title: 'Энергетические показатели электротехнического комплекса для симметричного индукционного нагрева металлоизделий шарообразной формы',
                         subtitle: "Вестник ЮУрГУ. Серия «Энергетика»",
-                        src:  "require('@assets/newspaper/Vest-URGTU.pdf')"
+                        src:  "/img/newspaper/Vest-URGTU.pdf"
                     },
                     {
 
                         title: 'Разработка и исследование системы управления индуктором для электротехнических комплексов по симметричному индукционному нагреву металлоизделий шарообразной формы',
                         subtitle: "«Вестник ИГЭУ»",
-                        src: "require('@/assets/newspaper/Bukgar2018.pdf')"
+                        src: "/img/newspaper/Bukgar2018.pdf"
                     }
                 ],
 

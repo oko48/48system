@@ -15,7 +15,7 @@
         </v-layout>
         <v-layout pb-5 row wrap>
             <v-flex xs12 sm12 md4>
-                <v-img class="team" :src="require('@/assets/kof.png')"></v-img>
+                <img class="team" src="@/assets/kof.png"></img>
                 <v-list class="team-name">
                                     <v-list-tile-content>
                                         <v-list-tile-title  class="team-text">Алксандр</v-list-tile-title>
@@ -25,7 +25,7 @@
                         </v-list>
             </v-flex>
             <v-flex xs12 sm12 md4>
-                <v-img class="team" :src="require('@/assets/tit.png')"></v-img>
+                <img class="team" src="@/assets/tit.png"></img>
 
                  <v-list class="team-name">
                                     <v-list-tile-content>
@@ -36,7 +36,7 @@
                         </v-list>
             </v-flex>
             <v-flex xs12 sm12 md4>
-                <v-img class="team" :src="require('@/assets/bez.png')"></v-img>
+                <img class="team" src="@/assets/bez.png"></img>
                 <v-list class="team-name">
                                     <v-list-tile-content>
                                         <v-list-tile-title  class="team-text">Даниил</v-list-tile-title>
@@ -101,13 +101,9 @@
     }
 
     .team {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 100%;
-        width: 80px;
-        margin-bottom: 80px;
+        width: 100px;
+        border-radius: 50%;
+        margin: 20px 0 -20px;
     }
     .team-text{
         text-align: center !important;

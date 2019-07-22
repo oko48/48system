@@ -61,7 +61,7 @@
                         </v-list>
                     </v-flex>
                     <v-flex xs12 sm12 md6>
-                         <v-list two-line>
+                        <v-list two-line>
                             <template v-for="(item, index) in items2">
                                 <v-subheader v-if="item.header" :key="item.header">
 
@@ -115,7 +115,6 @@
     export default {
         components: {
             Tabslider,
-            Tabslider2: () => import('@/components/Tabslider2'),
 
         },
         computed: {
@@ -125,8 +124,7 @@
             return {
                 componentKey: 0,
                 itshow: null,
-                items: [
-                    {
+                items: [{
 
                         title: "Development and investigation of a symmetric induction heating unit for spherical shape metal ware",
                         subtitle: "Journal of Chemical Technology and Metallurgy ",
@@ -159,8 +157,7 @@
                         src: "/img/newspaper/Magnitogorsk.pdf"
                     }
                 ],
-                items2: [
-                    {
+                items2: [{
 
                         title: "Induction Heating Plant for Heat Treatment of Spherical Metal Products",
                         subtitle: "RUSSIAN METALLURGY (METALLY)",
@@ -184,7 +181,7 @@
 
                         title: 'Энергетические показатели электротехнического комплекса для симметричного индукционного нагрева металлоизделий шарообразной формы',
                         subtitle: "Вестник ЮУрГУ. Серия «Энергетика»",
-                        src:  "/img/newspaper/Vest-URGTU.pdf"
+                        src: "/img/newspaper/Vest-URGTU.pdf"
                     },
                     {
 
@@ -303,11 +300,9 @@
                     // `this` указывает на текущий экземпляр
                     this.componentKey -= 1
                 })
-
-                console.log(this.componentKey)
             },
-            openPdf(itsrc){
-                //console.log(itsrc)
+            openPdf(itsrc) {
+
                 window.open(itsrc)
 
             }
@@ -316,36 +311,7 @@
 
         }
     }
-
 </script>
 <style>
-    .swiper-container {
-        padding-top: 5px;
-        height: 430px;
-        width: 100%;
-    }
-
-    .v-window__container {
-        height: 450px;
-    }
-
-    .swiper-slide {
-        text-align: center;
-        font-size: 38px;
-        font-weight: 700;
-        background-color: #eee;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-    .v-avatar .v-icon, .v-avatar .v-image, .v-avatar img{
-        border-radius: 0!important;
-    }
 
 </style>

@@ -3,7 +3,7 @@
         <!-- swiper -->
         <swiper :options="swiperOption" v-show="itemshow">
             <swiper-slide v-for="(item, index) in src" :key="index">
-                <v-img height="800" :src="item.src"></v-img>
+                <v-img :src="item.src"></v-img>
 <!--                       {{item}}-->
             </swiper-slide>
 
@@ -25,7 +25,7 @@
 
         data() {
             return {
-                image: 'http://lorempixel.com/1920/1920?0',
+                //image: 'http://lorempixel.com/1920/1920?0',
                 swiperOption: {
                     autoplay: {
                         delay: 2500,
@@ -82,18 +82,25 @@
     }
 </script>
 <style scope>
-/*
-    .swiper-container {
+ .swiper-container {
         padding-top: 5px;
-        height: 300px;
+        height: 430px;
         width: 100%;
+    }
+
+    .v-window__container {
+        height: 450px;
+    }
+
+    .v-image__image--cover {
+        background-size: contain;
     }
 
     .swiper-slide {
         text-align: center;
         font-size: 38px;
         font-weight: 700;
-        background-color: #eee;
+        background-color: transparent;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -104,5 +111,10 @@
         -ms-flex-align: center;
         align-items: center;
     }
-*/
+
+    .v-avatar .v-icon,
+    .v-avatar .v-image,
+    .v-avatar img {
+        border-radius: 0 !important;
+    }
 </style>

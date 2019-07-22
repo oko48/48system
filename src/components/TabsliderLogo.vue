@@ -1,54 +1,45 @@
 <template>
     <div>
         <!-- swiper -->
-        <swiper :options="swiperOption" v-show="itemshow">
-            <swiper-slide v-for="(item, index) in link" :key="index">
-                {{item.text}}
-                {{postTitle}}
+        <swiper :options="swiperOption">
+            <swiper-slide v-for="item, index) in partner" :key="index">
+                <v-img :src="item.src"></v-img>
             </swiper-slide>
 
-            <div class="swiper-pagination" slot="pagination"></div>
         </swiper>
     </div>
 
 </template>
 
 <script>
-
     export default {
 
         components: {
             //            swiper,
             //            swiperSlide
         },
-        props: ['postTitle', 'itshow'],
+
 
         data() {
             return {
                 itemshow: true,
-                link: [{
-                        text: 'Научные работы',
-                        link: '#first'
+                partner: [{
+                        id: 0,
+                        src: require('@/assets/fasie_rus.png')
                     },
                     {
-                        text: 'Команда22'
+                        id: 1,
+                        src: require('@/assets/skolkovo2.png')
                     },
                     {
-                        text: 'Проект подде222ржан'
-                    },
-                    {
-                        text: 'Контак222ты'
-                    },
-                    {
-                        text: 'Конт22акты2'
+                        id: 2,
+                        src: require('@/assets/lipetsk.jpg')
                     }
+
                 ],
                 swiperOption: {
-                    autoplay: {
-                        delay: 1500,
-                        disableOnInteraction: false
-                    },
-                    slidesPerView: 4,
+
+                    slidesPerView: 3,
                     spaceBetween: 30,
                     freeMode: true,
                     pagination: {
@@ -98,3 +89,36 @@
         }
     }
 </script>
+<style scope>
+/*
+ .swiper-container {
+        padding-top: 5px;
+        height: 220px;
+        width: 100%;
+    }
+
+    .v-window__container {
+        height: 230px;
+    }
+
+    .v-image__image--cover {
+        background-size: contain;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 38px;
+        font-weight: 700;
+        background-color: transparent;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+*/
+</style>

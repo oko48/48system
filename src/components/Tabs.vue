@@ -47,7 +47,7 @@
 
                                 <v-divider v-else-if="item.divider" :key="index" :inset="item.inset"></v-divider>
 
-                                <v-list-tile v-else :key="item.title" avatar @click="openPdf">
+                                <v-list-tile v-else :key="item.title" avatar @click="openPdf(item.src)">
                                     <v-list-tile-avatar>
                                         <img :src="require('@/assets/pdf.svg')">
                                     </v-list-tile-avatar>
@@ -61,7 +61,26 @@
                         </v-list>
                     </v-flex>
                     <v-flex xs12 sm12 md6>
-                        2
+                         <v-list two-line>
+                            <template v-for="(item, index) in items2">
+                                <v-subheader v-if="item.header" :key="item.header">
+
+                                </v-subheader>
+
+                                <v-divider v-else-if="item.divider" :key="index" :inset="item.inset"></v-divider>
+
+                                <v-list-tile v-else :key="item.title" avatar @click="openPdf(item.src)">
+                                    <v-list-tile-avatar>
+                                        <img :src="require('@/assets/pdf.svg')">
+                                    </v-list-tile-avatar>
+
+                                    <v-list-tile-content>
+                                        <v-list-tile-title v-html="item.title"></v-list-tile-title>
+                                        <v-list-tile-sub-title v-html="item.subtitle"></v-list-tile-sub-title>
+                                    </v-list-tile-content>
+                                </v-list-tile>
+                            </template>
+                        </v-list>
                     </v-flex>
                 </v-layout>
 
@@ -110,8 +129,8 @@
                     {
 
                         title: "Development and investigation of a symmetric induction heating unit for spherical shape metal ware",
-                        subtitle: "The present communication considers a symmetric induction heating unit for spherical shape metal ware. <br/ >It analyzes the corresponding electromagnetic processes, determines the inductor optimum frequency and amperage values and provides results of the experimental investigation.",
-                        src: require('@/assets/patent/0001.jpg')
+                        subtitle: "Journal of Chemical Technology and Metallurgy ",
+                        src: "require('assets/newspaper/Bukgar2018.pdf')"
                     },
                     {
                         divider: true,
@@ -119,8 +138,9 @@
                     },
                     {
 
-                        title: 'Summer BBQ <span class="grey--text text--lighten-1">4</span>',
-                        subtitle: "<span class='text--primary'>to Alex, Scott, Jennifer</span> &mdash; Wish I could come, but I'm out of town this weekend."
+                        title: 'Расчет и разработка экспериментальной индукционной установки для симметричной закалки мелющих металлических шаров',
+                        subtitle: "Черные металлы",
+                        src: "require('assets/newspaper/CherMet.pdf')"
                     },
                     {
                         divider: true,
@@ -128,8 +148,49 @@
                     },
                     {
 
-                        title: 'Oui oui',
-                        subtitle: "<span class='text--primary'>Sandra Adams</span> &mdash; Do you have Paris recommendations? Have you ever been?"
+                        title: 'Исследование распределения энергии электромагнитного поля в объёме металлического шара при нагреве в индукторе',
+                        subtitle: "Нижегородский государтвенны технический университет им. Р.Е. Алексеева",
+                        src: "assets/newspaper/Issledovanie_raspredlenia.pdf')"
+                    },
+                    {
+
+                        title: 'Анализ влияния электромагнитных сил на кинематтику движения шара в процессе осесимметричного индукционного нагрева',
+                        subtitle: "Электротехнические системы и комплексы ",
+                        src: "require('assets/newspaper/Magnitogorsk.pdf')"
+                    }
+                ],
+                items2: [
+                    {
+
+                        title: "Induction Heating Plant for Heat Treatment of Spherical Metal Products",
+                        subtitle: "RUSSIAN METALLURGY (METALLY)",
+                        src: "require('assets/newspaper/RussianMet.pdf')"
+                    },
+                    {
+                        divider: true,
+                        inset: true
+                    },
+                    {
+
+                        title: 'Исследования и разработка электро термического оборудования непрерывного действия для симметричного индукционного нагрева под закалку мелющих шаров',
+                        subtitle: "Сталь",
+                        src: "require('assets/newspaper/Steeel.pdf')"
+                    },
+                    {
+                        divider: true,
+                        inset: true
+                    },
+                    {
+
+                        title: 'Энергетические показатели электротехнического комплекса для симметричного индукционного нагрева металлоизделий шарообразной формы',
+                        subtitle: "Вестник ЮУрГУ. Серия «Энергетика»",
+                        src:  "require('@assets/newspaper/Vest-URGTU.pdf')"
+                    },
+                    {
+
+                        title: 'Разработка и исследование системы управления индуктором для электротехнических комплексов по симметричному индукционному нагреву металлоизделий шарообразной формы',
+                        subtitle: "«Вестник ИГЭУ»",
+                        src: "require('@/assets/newspaper/Bukgar2018.pdf')"
                     }
                 ],
 
@@ -245,8 +306,9 @@
 
                 console.log(this.componentKey)
             },
-            openPdf(){
-                window.open("https://www.ya.ru")
+            openPdf(itsrc){
+                //console.log(itsrc)
+                window.open(itsrc)
 
             }
 
@@ -281,6 +343,9 @@
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+    }
+    .v-avatar .v-icon, .v-avatar .v-image, .v-avatar img{
+        border-radius: 0!important;
     }
 
 </style>

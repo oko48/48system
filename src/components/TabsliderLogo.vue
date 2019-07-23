@@ -2,7 +2,7 @@
     <div>
         <!-- swiper -->
         <swiper :options="swiperOption">
-            <swiper-slide v-for="item, index) in partner" :key="index">
+            <swiper-slide v-for="(item, index) in partner" :key="index">
                 <v-img :src="item.src"></v-img>
             </swiper-slide>
 

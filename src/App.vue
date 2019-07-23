@@ -14,7 +14,7 @@
                 <h2>Команда проекта</h2>
             </v-flex>
             <v-flex xs12 sm12 md4>
-                <img class="team" src="@/assets/kof.png"></img>
+                <img class="team" src="@/assets/kof.png">
                 <v-list class="team-name">
                     <v-list-tile-content>
                         <v-list-tile-title class="team-text">Алксандр</v-list-tile-title>
@@ -24,7 +24,7 @@
                 </v-list>
             </v-flex>
             <v-flex xs12 sm12 md4>
-                <img class="team" src="@/assets/tit.png"></img>
+                <img class="team" src="@/assets/tit.png">
 
                 <v-list class="team-name">
                     <v-list-tile-content>
@@ -35,7 +35,7 @@
                 </v-list>
             </v-flex>
             <v-flex xs12 sm12 md4>
-                <img class="team" src="@/assets/bez.png"></img>
+                <img class="team" src="@/assets/bez.png">
                 <v-list class="team-name">
                     <v-list-tile-content>
                         <v-list-tile-title class="team-text">Даниил</v-list-tile-title>
@@ -46,7 +46,7 @@
             </v-flex>
         </v-layout>
 
-
+ <div style="clear"></div>
         <v-layout pb-5 row wrap id="support">
             <v-flex xs12>
                 <h2>Проект поддержан</h2>
@@ -132,4 +132,13 @@
         margin: 0 20px;
         height: 100px;
     }
+    @media screen and (max-width: 600px) {
+    #team {
+        margin-top: -100px;
+
+    }
+        .team-name{
+            margin: auto;
+        }
+}
 </style>

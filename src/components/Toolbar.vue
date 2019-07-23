@@ -1,24 +1,20 @@
 <template>
     <v-toolbar app flat>
-       <v-menu  class="hidden-md-and-up">
-      <template #activator="{ on: menu }">
-        <v-tooltip bottom>
-          <template #activator="{ on: tooltip }">
-            <v-toolbar-side-icon v-on="{ ...menu }" class="hidden-md-and-up" @click="show = !show" key="menu" />
-          </template>
+        <v-menu class="hidden-md-and-up">
+            <template #activator="{ on: menu }">
+                <v-tooltip bottom>
+                    <template #activator="{ on: tooltip }">
+                        <v-toolbar-side-icon v-on="{ ...menu }" class="hidden-md-and-up" @click="show = !show" key="menu" />
+                    </template>
 
-        </v-tooltip>
-      </template>
-      <v-list>
-        <v-list-tile
-          v-for="(item, index) in links"
-          :key="index"
-          @click="$vuetify.goTo(item.link,'easeInOutCubic')"
-        >
-          <v-list-tile-title>{{ item.text }}</v-list-tile-title>
-        </v-list-tile>
-      </v-list>
-    </v-menu>
+                </v-tooltip>
+            </template>
+            <v-list>
+                <v-list-tile v-for="(item, index) in links" :key="index" @click="$vuetify.goTo(item.link,'easeInOutCubic')">
+                    <v-list-tile-title>{{ item.text }}</v-list-tile-title>
+                </v-list-tile>
+            </v-list>
+        </v-menu>
 
         <v-container mx-auto py-0>
             <v-layout>
@@ -38,14 +34,6 @@
     export default {
 
         computed: {
-
-        },
-
-        methods: {
-            onClick(event, item) {
-                console.log(event + " " + item)
-            },
-
 
         },
         data() {

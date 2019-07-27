@@ -2,15 +2,17 @@
     <v-app>
         <core-toolbar />
         <slider />
+        <v-container>
         <v-layout row wrap id="sciencework">
-            <v-flex xs12>
+            <v-flex py-2 xs12>
                 <h2>Научные работы</h2>
             </v-flex>
         </v-layout>
         <tabs />
-
+    </v-container>
+<v-container>
         <v-layout row wrap id="team">
-            <v-flex xs12>
+            <v-flex py-3 xs12>
                 <h2>Команда проекта</h2>
             </v-flex>
             <v-flex xs12 sm12 md4>
@@ -45,10 +47,10 @@
                 </v-list>
             </v-flex>
         </v-layout>
-
- <div style="clear"></div>
+    </v-container>
+ <v-container>
         <v-layout row wrap id="support">
-            <v-flex xs12>
+            <v-flex py-2 xs12>
                 <h2>Проект поддержан</h2>
             </v-flex>
             <v-flex xs12 sm12 md3 offset-xs4 offset-md2>
@@ -62,11 +64,11 @@
             </v-flex>
         </v-layout>
 
-        <v-layout pb-5 row wrap id="contact">
-            <v-flex xs12>
+        <v-layout row wrap id="contact">
+            <v-flex py-3 xs12>
                 <h2>Контакты</h2>
             </v-flex>
-            <v-flex pb-5 xs12 sm12 md6 offset-xs0 offset-md3 offset-sm4)>
+            <v-flex  xs12 sm12 md6 offset-xs0 offset-md3 offset-sm4)>
                 <v-card>
                     <v-card-text>
                         <p> +7(904)690-26-01 - Титов Сергей Сергеевич </p>
@@ -76,7 +78,7 @@
                 </v-card>
             </v-flex>
         </v-layout>
-
+</v-container>
 
         <footers />
 

@@ -9,7 +9,7 @@
         </v-layout>
         <tabs />
 
-        <v-layout pb-5 row wrap id="team">
+        <v-layout row wrap id="team">
             <v-flex xs12>
                 <h2>Команда проекта</h2>
             </v-flex>
@@ -17,7 +17,7 @@
                 <img class="team" src="@/assets/kof.png">
                 <v-list class="team-name">
                     <v-list-tile-content>
-                        <v-list-tile-title class="team-text">Алксандр</v-list-tile-title>
+                        <v-list-tile-title class="team-text">Александр</v-list-tile-title>
                         <v-list-tile-sub-title class="team-text">Я снимаю административные барьеры и умею продавать.</v-list-tile-sub-title>
                     </v-list-tile-content>
 
@@ -47,7 +47,7 @@
         </v-layout>
 
  <div style="clear"></div>
-        <v-layout pb-5 row wrap id="support">
+        <v-layout row wrap id="support">
             <v-flex xs12>
                 <h2>Проект поддержан</h2>
             </v-flex>
@@ -118,7 +118,7 @@
     .team {
         width: 100px;
         border-radius: 50%;
-        margin: 20px 0 -20px;
+/*        margin: 20px 0 -20px;*/
     }
 
     .team-text {

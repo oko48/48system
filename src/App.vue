@@ -5,7 +5,7 @@
         <v-container>
         <v-layout row wrap id="sciencework">
             <v-flex py-2 xs12>
-                <h2>Научные работы</h2>
+                <h2>Развитие проекта</h2>
             </v-flex>
         </v-layout>
         <tabs />
@@ -59,8 +59,8 @@
             </v-flex>
             <v-spacer></v-spacer>
 
-            <v-flex xs12 sm12 md3 offset-xs5 offset-md4>
-                <v-img width="100" :src="require('@/assets/skolkovo2.png')"></v-img>
+            <v-flex xs12 sm12 md3 offset-xs4 offset-md2>
+                <v-img width="100" :src="require('@/assets/skolkovo2.png')" @click="OpenSk"></v-img>
             </v-flex>
         </v-layout>
 
@@ -102,7 +102,11 @@
         methods: {
             OpenFasie() {
                 window.open("http://fasie.ru")
+            },
+            OpenSk() {
+                window.open("http://sk.ru/news/b/news/archive/2019/04/10/glavnyy-priz-startaptura-v-lipecke-poluchila-razrabotka-dlya-tyazheloy-promyshlennosti.aspx")
             }
+
         }
     }
 </script>

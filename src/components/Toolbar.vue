@@ -40,7 +40,7 @@
             return {
                 show: false,
                 links: [{
-                        text: 'Научные работы',
+                        text: 'Развитие проекта',
                         link: '#sciencework'
                     },
                     {

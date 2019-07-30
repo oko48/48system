@@ -9,16 +9,16 @@
 -->
         <v-tabs fixed-tabs>
             <v-tab @click="forceRerender">
-                Патенты
+                Нематериальные активы
             </v-tab>
             <v-tab @click="forceRerender">
-                Статьи
+                Экспертный аудит
             </v-tab>
             <v-tab @click="forceRerender">
-                Грамоты
+                Наши успехи
             </v-tab>
             <v-tab>
-                Презентации
+                Подробнее о проекте
             </v-tab>
             <v-tab-item>
 
@@ -92,14 +92,19 @@
             <v-tab-item>
                 <v-layout row wrap>
 
-                    <v-flex xs12 sm12 md6>
+                    <v-flex xs12 sm12 md4>
                         <v-card flat>
-                            <v-card-text> <iframe src="//docs.google.com/gview?url=system48.ru/img/English48.pptx&embedded=true" style="width:400px; height:300px;" frameborder="0"></iframe></v-card-text>
+                            <v-card-text> <iframe src="//docs.google.com/gview?url=system48.ru/img/English48.pptx&embedded=true" style="width:100%; height:190px;" frameborder="0"></iframe></v-card-text>
                         </v-card>
                     </v-flex>
-                    <v-flex xs12 sm12 md6>
+                    <v-flex xs12 sm12 md4>
                         <v-card flat>
-                            <v-card-text> <iframe src="//docs.google.com/gview?url=system48.ru/img/German48.pptx&embedded=true" style="width:400px; height:300px;" frameborder="0"></iframe></v-card-text>
+                            <v-card-text> <iframe src="//docs.google.com/gview?url=system48.ru/img/Russian48.pptx&embedded=true" style="width:100%; height:190px;" frameborder="0"></iframe></v-card-text>
+                        </v-card>
+                    </v-flex>
+                    <v-flex xs12 sm12 md4>
+                        <v-card flat>
+                            <v-card-text> <iframe src="//docs.google.com/gview?url=system48.ru/img/German48.pptx&embedded=true" style="width:100%; height:190px;" frameborder="0"></iframe></v-card-text>
                         </v-card>
                     </v-flex>
                 </v-layout>

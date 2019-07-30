@@ -58,7 +58,7 @@
 </script>
 <style scope>
     .title-right {
-        font-size: 2.18vh;
+        font-size: 1rem;
         text-align: justify;
     }
 
@@ -66,7 +66,7 @@
         height: 500px;
         overflow: hidden;
         display: flex;
-        align-items: center;
+/*        align-items: center;*/
         /*        max-height: 320px*/
     }
 </style>

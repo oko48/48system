@@ -17,7 +17,7 @@
         white--text
         xs12
       >
-        &copy;2019 — <strong>ООО "НПП СИСТЕМА48"</strong>
+        {{currentYear}} — <strong>ООО "НПП СИСТЕМА48"</strong>
       </v-flex>
     </v-layout>
   </v-footer>
@@ -25,7 +25,7 @@
 <script>
   export default {
     data: () => ({
-
+      currentYear: new Date().getFullYear()
     })
   }
 </script>

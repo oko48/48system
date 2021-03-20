@@ -17,7 +17,7 @@
         white--text
         xs12
       >
-        {{currentYear}} — <strong>ООО "НПП СИСТЕМА48"</strong>
+       2019-{{currentYear}} — <strong>ООО "НПП СИСТЕМА48"</strong>
       </v-flex>
     </v-layout>
   </v-footer>

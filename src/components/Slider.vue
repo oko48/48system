@@ -5,14 +5,14 @@
                 <v-card dark color="secondary">
                     <v-carousel :cycle="false">
                         <v-carousel-item>
-                            <iframe height="500" width="930" src="https://www.youtube.com/embed/lcp8Lin3GgY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </v-carousel-item>
-                        <v-carousel-item>
                             <video height="500" poster="@/assets/video/vid001.jpg" preload="auto" autoplay="true" loop="true" muted="muted" controls="controls" tabindex="0">
                                 <source height="500" src="@/assets/video/film1.mp4" type='video/mp4' />
                                 <source height="500" src="@/assets/video/film1.webm" type='video/webm; codecs="vp8, vorbis"' />
                                 <!--                                <source src="@/assets/video/film1.ogv" type='video/ogg; codecs="theora, vorbis"' />-->
                             </video>
+                        </v-carousel-item>
+                        <v-carousel-item>
+                            <iframe height="500" width="930" src="https://www.youtube.com/embed/lcp8Lin3GgY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </v-carousel-item>
 <!--                        <v-carousel-item>-->
 <!--                            <v-img height="500" :src="require('@/assets/img001.jpg')"></v-img>-->

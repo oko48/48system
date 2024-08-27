@@ -60,7 +60,7 @@
             <v-spacer></v-spacer>
 
             <v-flex xs12 sm12 md3 offset-xs4 offset-md2>
-                <v-img width="100" :src="require('@/assets/skolkovo2.png')" @click="OpenSk"></v-img>
+                <v-img width="220" :src="require('@/assets/skolkovo2.png')" @click="OpenSk"></v-img>
             </v-flex>
         </v-layout>
 
@@ -101,10 +101,10 @@
         },
         methods: {
             OpenFasie() {
-                window.open("http://fasie.ru")
+                window.open("https://fasie.ru")
             },
             OpenSk() {
-                window.open("http://sk.ru/news/b/news/archive/2019/04/10/glavnyy-priz-startaptura-v-lipecke-poluchila-razrabotka-dlya-tyazheloy-promyshlennosti.aspx")
+                window.open("https://sk.ru")
             }
 
         }
